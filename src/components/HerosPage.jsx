@@ -16,6 +16,7 @@ export const SuperHeroesPage = () => {
       })
       .catch((err) => {
         setIsError(true);
+        setIsLoading(false);
         setError(err.message);
       });
   }, []);
